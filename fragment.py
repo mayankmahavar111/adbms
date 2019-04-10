@@ -29,8 +29,8 @@ def getPredicate(attribute,db):
 def getFragments(db):
     attribute=getAttribute(db)
     predicate=getPredicate(attribute,db)
-    print attribute
-    print predicate
+    print "deciding attribute :",attribute
+    print "predicate:",predicate
     f1=executeQuery(db,attribute,predicate,'>')
     f2=executeQuery(db,attribute,predicate,'<')
     f3=executeQuery(db,attribute,predicate,'=')
