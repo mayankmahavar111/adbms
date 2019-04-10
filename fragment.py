@@ -35,11 +35,17 @@ def getFragments(db):
     f2=executeQuery(db,attribute,predicate,'<')
     f3=executeQuery(db,attribute,predicate,'=')
 
+
+
    # print f1,'\n',f2,'\n',f3,'\n'
 
+    """
     print "f1 -> s4"
     print "f2 -> s1,s2,s3,s4"
     print "f3 -> s1,s2,s4"
+    """
+
+    return attribute,f1,f2,f3
 
 if __name__ == '__main__':
     db_name = 'data'
